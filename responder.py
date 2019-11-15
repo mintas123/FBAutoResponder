@@ -32,7 +32,7 @@ class ResponseBot(Client):
                           thread_id=thread_id,
                           thread_type=thread_type)
             # def julia
-            if re.search("^@julia .*", msg.lower()):
+            if re.search("^@julia.*", msg.lower()):
                 self.sendRemoteFiles([JJ_GIF],
                                      Message(text=JJ_MSG),
                                      thread_id=thread_id,
